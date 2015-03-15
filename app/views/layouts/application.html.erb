@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Enchant</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Enchant Design: makers of thoughtful digital products</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="https://paulmederos.s3.amazonaws.com/enchant/favicon.png">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <!-- Typekit fonts -->
+  <script src="//use.typekit.net/odk7dao.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <!-- Segment.io Analytics -->
+  <%= render "layouts/segment_head" %>
+
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= content_for :body_class %>">
 
+<%= render "layouts/header" %>
 <%= yield %>
 
 </body>

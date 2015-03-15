@@ -1,0 +1,15 @@
+<!-- RSS reader to pull cards goes here. -->
+
+<% @posts = [] %>
+<div class="visible-posts">
+  <% @posts.each do |post| %>
+    <div class="card-post animated fadeInUp">
+      <img class="post-author-avatar" src="<%= post.author.image_url %>">
+      <h3 class="post-title"><a href="<%= post.link %>"><%= post.title %></a></h3>
+      <p class="post-excerpt"><%= post.excerpt %>...</p>
+    </div>
+  <% end %>
+</div>
+
+<div class="hidden-posts hidden"></div>
+<a href="#" class="show-more-posts" style="max-width:600px; display:block; text-align:right; outline:none;">Show more posts</a>

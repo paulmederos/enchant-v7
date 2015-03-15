@@ -1,0 +1,24 @@
+<header class="header animated delayed fadeInDown">
+    <a href="/" class="enchant-logo"></a>
+    <ul class="navigation">
+      <!-- {{#is "index"}} -->
+        <li><a href="#blog" class="scrollable-anchor">Blog</a></li>
+        <li><a href="#about" class="scrollable-anchor">About</a></li>
+      <!-- {{else}} -->
+        <!-- <li><a href="/#blog" class="scrollable-anchor">Blog</a></li> -->
+        <!-- <li><a href="/#about" class="scrollable-anchor">About</a></li> -->
+      <!-- {{/is}} -->
+      
+      <li>
+        <a href="#books">Books</a>
+        <div class="dropdown-container">
+          <img src="http://paulmederos.s3.amazonaws.com/enchant/illustration-UX_book-v1.png" class="ux-book">
+          <h3>We're working on a book.</h3>
+          <p style="margin-bottom:.5em;">It's called <b>"Step-by-step Guide: Crafting Your UX Portfolio"</b> and it's aimed at people who want to break into interaction design professionally. We'll break down 
+          what the best design cultures are looking for when hiring interaction designers.</p>
+          <p><i>Bonus: toss in your email and we'll send you a special gift... the gift of knowledge!</i></p>
+          <%= render "layouts/mailchimp_form" %>
+        </div>
+      </li>
+    </ul>
+  </header>
