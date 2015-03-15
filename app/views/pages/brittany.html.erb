@@ -1,17 +1,27 @@
 <main class="content wrap animated animated-mid fadeInUp" role="main">
-  <section class="intro">
-    <h1>Brittany Mederos</h1>
+  <section class="about" style="margin-top:8rem;">
+    <h1 style="margin-bottom:.25em;">Brittany Mederos</h1>
     <p class="subheader">Focusing on the user, one problem at a time</p>
     <p>Brittany is a lead interaction designer at Elementum SCM, building their flagship application: Transport. Brittany works closely with the product manager, stakeholders, and engineering teams to design useful, usable interfaces for logistics managers in Fortune 500 companies across mobile, web, and large-screen displays.</p>
 
     <p>Brittany fights for the user. She strives to inspire empathy and the creation of meaningful applications and interactions. Known for her fearless exploration and uninhibited design methods, Brittany has been able to create innovative solutions that solve the not-so-obvious problems.</p>
   </section>
 
-  <section class="blog" name="blog" id="blog">
-    
+  <section class="case-studies">
+    <p class="subheader"><b>Case studies</b> are invaluable for both you and I.</p>
+    <p>For starters, you learn about my (and my team's) process. For me, it gives me time for reflection so that I can do better in the future. Win-win. Check 'em out here:</p>
   </section>
 
-  
+  <section class="blog"> 
+    <p class="subheader">Ah, <b>my writing</b>.</p>
+    <p>I typically write about interaction design patterns, specifically problems I come across day-to-day, and tips for approaching those problems if you find yourself staring them down. Here's a few recent thoughts:</p>
+    <%= render 'pages/blog_cards', author: "Brittany" %>    
+  </section>
+  <section class="contact"> 
+    <p class="subheader">Where can you <b>find me on the web?</b></p>
+    <p>I'm a terrible Twitterer, but I try my best <%= link_to "over at @brim", "http://twitter.com/brim" %>. If you're looking for my professional stuff, you might want to <%= link_to "try LinkedIn", "http://www.linkedin.com/in/brittanymederos/en" %>, or catch small bits of my visual work <%= link_to "on Dribbble", "http://dribbble.com/brim" %>. You can find my adventures (cooking, rock clibming, lots of coffee,  and beach-goings) over <%= link_to "on Instagram", "https://instagram.com/brimederos/" %>.</p>
+    <p>If <b>email</b> is your cup of tea, <%= mail_to "bm@enchant.co", "send me a message here" %>; but be warned: Inbox Zero is not a common place for me.</p>
+  </section>
 </main>
 
 <% if Rails.env.production? %>

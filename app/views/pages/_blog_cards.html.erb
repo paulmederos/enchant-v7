@@ -1,16 +1,21 @@
 <!-- RSS reader to pull cards goes here. -->
 
 <% 
-@posts = []
-require 'rss'
-begin
-  rss = RSS::Parser.parse('http://writing.enchant.co/rss/', false)
-  rss.items.each do |item|
-    @posts << item
+  @posts = []
+  require 'rss'
+
+  begin
+    rss = RSS::Parser.parse('http://writing.enchant.co/rss/', false)
+    rss.items.each do |item|
+      if author == "All"
+        @posts << item
+      else
+        @posts << item if item.dc_creator.include?(author)
+      end
+    end
+  rescue => e
+    nil
   end
-rescue => e
-  nil
-end
 
 %>
 
