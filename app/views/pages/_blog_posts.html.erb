@@ -3,10 +3,13 @@
 <% 
 @posts = []
 require 'rss'
-
-rss = RSS::Parser.parse('http://writing.enchant.co/rss/', false)
-rss.items.each do |item|
-  @posts << item
+begin
+  rss = RSS::Parser.parse('http://writing.enchant.co/rss/', false)
+  rss.items.each do |item|
+    @posts << item
+  end
+rescue => e
+  nil
 end
 
 %>
