@@ -1,0 +1,117 @@
+<main class="content wrap animated fadeIn" role="main">
+  <section class="overview" style="margin-top:8rem;">  
+    <h1>Elementum: Transport App</h1>
+    <p class="subheader">Real time logistics visibility that helps Logistic managers be more proactive and spend less time tracking down spreadsheets.</p>
+  </section>
+
+  <section>
+    <h3>The Problem</h3>
+
+    <p>Shipment tracking and carrier management is hard. Especially for large global manufacturing companies like Dyson. If the logistics manager is lucky, they only have one carrier relationship, like Fedex, they have to manage. But usually, like in Dyson’s case, they work with 3 or more carriers servicing all of their global markets. </p>
+
+    <p>Keeping tabs on all their shipments, and we are talking 1,000s of shipments in transit on any given day, can be almost impossible. In order to monitor their shipments it means logging into each of the individual carriers websites, tracking down the shipments status and then reporting the findings and metrics back to their team. Lots of spreadsheets are passed around. These spreadsheets can become quickly outdated, almost the moment they are sent, and then there is the ritual digging through email to track who said what. </p>
+
+    <iframe width="100%" height="360" src="https://www.youtube.com/embed/sK4S6klZvDU" frameborder="0" allowfullscreen></iframe>
+
+    <p>What logistics managers need is one portal to manage and monitor all their shipments and carriers. One place to collaborate with their team. The basic needs of a logistics manager are:</p>
+
+    <ul>
+        <li>“Where are all my shipments?”</li>
+        <li>“What is arriving tomorrow?”</li>
+        <li>“What is not arriving tomorrow, and what didn’t ship out on-time?</li>
+        <li>“Are there any bottlenecks on my route I should be aware of?”</li>
+        <li>“How are my carriers performing against their SLA?”</li>
+    </ul>
+
+    <p>Most of these questions rely on real time up-to-date information, which is not always available or can be a painstaking process to hunt down.</p>
+
+    <h3>Users &amp; Audience</h3>
+
+    <p>The current target users of Transport are Logistic managers or Inventory specialist for large global manufacturing companies that work with multiple carriers. </p>
+
+    <p>The important thing to note about Enterprise users is that they are not using these tools because they like them, this is their job. They have a goal defined by their position that they need to accomplish, and they are given the tools they use. They fall into the bucket of a “prepared user”. They can easily articulate what it is they do with their current tools to get their job done and what they feel is missing or could be improved upon. </p>
+
+    <p>The biggest complexity with these users is that every supply chain or business process is defined and carried out a little differently. The Transport application had to work for multiple industries from consumer electronics, to automotive, to pharmaceutical, to industrial and telecom. </p>
+
+    <p>Finding the common goals and solutions across logistics in these different industries continues to be a fun and invigorating challenge for Transport as a product. </p>
+
+    <h3>Team &amp; Stakeholders</h3>
+
+    <h4>Product Team</h4>
+
+    <p>I work closely with my Product manager (PM), engineering and design team. My PM and I help prioritize the backlog of seemingly endless features and problem statements, we work with the engineering team to help scope the potential features and brainstorm ideas for the multiple ways to implement them. </p>
+
+    <h4>Design Team</h4>
+
+    <p>I work with the design team and my Visual designer to ensure consistency and try to use our platform reusable component and style guide patterns when I can. Elementum currently has 3 main applications; Transport, Exposure and Manufacture. All apps run on the same platform, so it’s important for me to keep in sync with the other interaction designers on the features they are building so we can leverage each others patterns. </p>
+
+    <h4>Leadership and Customers</h4>
+
+    <p>I have bi-weekly meeting with leadership to show the progress on projects and get their input for the vision of the Transport. I’ve also gone out into the field to perform UX Research at Dyson Chicago with their logistics and inventory team to gather feedback and test upcoming concepts. </p>
+
+    <h3>Constraints</h3>
+
+    <h4>Partial Data and Data Quality</h4>
+
+    <p>Transport relies on carriers and suppliers to send data into our platform. The perfect shipment detail will contain, From, To, What’s inside the shipment, the route it will most likely take, which mode of transportation and who to contact if there’s a problem. The carrier then sends EDI pings when they check a shipment in/out of a hub or warehouse as it makes it way to the destination. </p>
+
+    <p>Transport doesn’t always get 100% of the information. So designing an interface that is flexible enough to accommodate the least amount of info we could receive and intelligently tell the Logistic manager why we didn’t receive certain pieces of information and steps they can take to find the missing data, has been my biggest and most rewarding challenge.</p>
+
+    <h4>Balancing Customer Requests with what’s best for the Product</h4>
+
+    <p>As a product company especially when selling to your first couple of large customers you want to maintain a great relationship, and for enterprise software that sometimes means accommodating specific requests from your customers which reshuffles other product roadmap priorities. As a design this sometimes chaotic, fly by the seat of your pants designing can be challenging. It’s interesting because most of the times the customer would come with a solution and you would walk them through the design process to get at the heart of the problem they were trying to solve and then coming to an agreement on a solution that might not have been the original ask, but fit the needs of both our customer and the application roadmap.</p>
+
+    <h4>Keeping consistency across web and mobile</h4>
+
+    <p>Designing an application that has both web and mobile presence is interesting when most of your users are desktop power users, and finding the balance of what a mobile application could do to compliment the web experience but maybe not have 100% capabilities that are built into web. </p>
+
+    <p>The shared components that did bleed from web into mobile like being able to search or filter shipments, led me into the decision of where to keep the same design and where to make use of the mobile native components. For example: If I added a new filter category, like filter by shipments carrying a specific part number/SKU, to web I would have to make sure mobile was also updated (iPhone and Android) it was almost triple the work. Especially since iPhone and Android have diverging patterns for user navigation and action bars.</p>
+
+    <h3>Design Process</h3>
+
+    <p>The overarching process was pretty similar, plus or minus a couple of the following steps:</p>
+
+    <img src="https://s3.amazonaws.com/f.cl.ly/items/033G0N2q0D2L3B203s0l/transport-process.jpg" alt="The design process for elementum" width="100%" style="min-height:360px; background-color: #eee; margin:1em auto 2em;">
+
+    <p>I would always start a project brainstorming with the PM and whoever on the product team was available. We would go through the backlog of features and customer requests and re-prioritize on a weekly basis. I would facilitate these sessions and brainstorming through whiteboard documentation or design exercises with lots of sticky notes. After that I would take photos of our meetings conclusion and head back to my computer to document the meeting notes and head into some basic wire framing or flow diagrams.</p>
+    <p>I would pull over my PM and would review the various iterations and gaps I found. After those were addressed I might jump into a prototype to get a better feel for the interaction and flow.</p>
+    <p>I would then socialize it with the design team. They would help me identify if there is a common component of pattern already in place I could consider using to speed up the implementation, or if it is a new pattern we would review it and document it into the pattern library for the next time we need that patter. I would work with my visual designer to get the full high fidelity comps ready for review with the product team </p>
+
+    <p>Elementum works with Confluence and Google Docs for documentation and Jira for our task management. The design team is fully integrated with the product board, all of our tasks logged in Jira alongside the engineering tasks</p>
+
+    <p>We followed this process for all of the features that make up Transport today:</p>
+
+    <ul>
+        <li>Single shipment profile page</li>
+        <li>Shipment collaboration, follow and share</li>
+        <li>Searching and filtering for a shipment</li>
+        <li>First time User Experience, on boarding for Transport</li>
+        <li>Route performance monitoring</li>
+        <li>Shipment and carrier insights</li>
+    </ul>
+
+    <p><em></em></p>
+    <img src="https://s3.amazonaws.com/f.cl.ly/items/0C1a3K1o3m11013O0m0O/multi-apps.jpg" alt="The various projects" width="100%" style="min-height:360px; background-color: #eee; margin:1em auto 2em;">
+
+    <h3>The Result</h3>
+
+    <p>Transport is now supporting large companies like: Dyson, Flextronics, Bloomberg, Tesla, Johnson &amp; Johnson with a fully functioning web, iOS and Android app that provides a single portal to check the latest up to date shipment information.</p>
+
+    <p><%= link_to "http://www.elementum.com/files/Elementum%20Transport%20Data%20Sheet.pdf?pdf=TransportDataSheet", "http://www.elementum.com/files/Elementum%20Transport%20Data%20Sheet.pdf?pdf=TransportDataSheet", target: "_blank" %></p>
+
+    <h3>Retrospective</h3>
+
+    <h4>More customer interactions and user research, and even in-house research</h4>
+
+    <p>There is only so much time in the day, but I always wish there was more time in the day for customer feedback and user research. We have performed light weight guerrilla research at Starbucks coffee shops and remote usability sessions, and even in person design workshops with some of our current customers. I’m always in awe at the gold mine of information and clarity these sessions bring. Elementum doesn’t have a full time User Researcher, <em>but we are currently looking for one</em>. I can only imagine the amount of useful testing results and findings a full time research can bring to the design team.</p>
+
+    <h4>More in depth analytics</h4>
+
+    <p>Analytics wasn’t a huge priority when Transport was first built. Over the past year there has been a big push for placing the right hooks and identifying the funnels for analytic tracking. The insights we have gathered from what data we are capturing now are so insightful. And can be both encouraging to see the usage and helpful when deciding what to prioritize for the next set of features.</p>
+
+    <h4>Be flexible with your tools</h4>
+
+    <p>Ever since the start of the project I have been experimenting with multiple prototyping tools. <%= link_to "I wrote about it on my blog here", "http://writing.enchant.co/2014/11/28/top-prototyping-tools-for-interaction-designers/" %>. I’ve also been balancing my documentation between the collaborative Google docs or the well organized Confluence. I’m always striving for the same thing, get everyone on the same page and keep the process well documented and up to date. </p>
+
+    <p>As an interaction design that means using the visual medium to communicate ideas like flows or wireframes or prototypes, and it doesn’t matter what tool you use to get the job done. Just as long as you are able to produce design documentation that aids clarification and helps the team move forward.</p>
+  </section>

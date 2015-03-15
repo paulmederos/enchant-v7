@@ -1,0 +1,3 @@
+class BrittanyController < ApplicationController
+
+end
