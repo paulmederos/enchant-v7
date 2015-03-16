@@ -11,3 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
+
+.powenv
+.ruby-version
+.ruby-gemset
