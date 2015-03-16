@@ -1,0 +1,33 @@
+<%
+  @studies = [
+    {
+      title: "Elementum: Transport App",
+      description: "Real time logistics visibility that helps Logistic managers be more proactive and spend less time tracking down spreadsheets.",
+      url: transport_path,
+      image_link: "http://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-transport-icon.png"
+    },{
+      title: "Elementum: Situation Room",
+      description: "Minority report for your supply chain",
+      url: situation_room_path,
+      image_link: "http://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-situationroom_app_icon.png"
+    },{
+      title: "CFPB: Paying For College",
+      description: "Helping Students make smarter financial decisions about college.",
+      url: pfc_path,
+      image_link: "https://s3.amazonaws.com/f.cl.ly/items/0k1P0P0g2w1H3D1G2r36/pfc.png"
+    },{
+      title: "CFPB: Yearly Strategic Plan",
+      description: "A new type of government report—a living document, an online interactive report—for the CFPB to send to Congress",
+      url: strategic_plan_path,
+      image_link: "https://s3.amazonaws.com/f.cl.ly/items/262l3Z1e1f2J0f393p1q/strategic-plan.png"
+    }
+  ]
+%>
+
+<% @studies.each do |study| %>
+  <div class="card-post animated fadeInUp">
+    <img class="post-author-avatar" src="<%= study[:image_link] %>">
+    <h3 class="post-title"><a href="<%= study[:url] %>"><%= study[:title] %></a></h3>
+    <p class="post-excerpt"><%= study[:description] %></p>
+  </div>
+<% end %>

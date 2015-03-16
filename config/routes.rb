@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   scope "brittany" do
-    get '/', to: 'brittany#about'
-    get '/transport', to: 'brittany#transport'
+    get '/',                    to: 'brittany#about', as: :about_brittany
+    get '/transport',           to: 'brittany#transport', as: :transport
+    get '/paying-for-college',  to: 'brittany#paying_for_college', as: :pfc
+    get '/situation-room',      to: 'brittany#situation_room', as: :situation_room
+    get '/strategic-plan',      to: 'brittany#strategic_plan', as: :strategic_plan
   end
 
   # Example of regular route:
