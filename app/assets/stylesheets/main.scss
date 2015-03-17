@@ -495,7 +495,34 @@ article.post {
 }
 
 .card-case-study {
-  .post-excerpt {
-    // font-size:4rem;
+  position: relative;
+  max-width: 600px;
+  padding:1.5em 1em 1em;
+  box-sizing:border-box;
+  border:1px solid #E0E0E0;
+  border-radius: 6px;
+  margin-bottom:1em;
+  transition: all $material-curve 0.3s;
+  cursor: pointer;
+  padding-left:5em;
+
+  &:hover {
+    transition: all $material-curve 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+
+  .case-study-icon {
+    position: absolute;
+    top:1em;
+    left:1em;
+    height:48px;
+    width:48px;
+    border-radius:50%;
   }
 }
+
