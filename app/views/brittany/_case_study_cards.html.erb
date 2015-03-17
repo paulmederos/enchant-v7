@@ -25,7 +25,7 @@
 %>
 
 <% @studies.each do |study| %>
-  <div class="card-post animated fadeInUp">
+  <div class="card-post card-case-study animated fadeInUp">
     <img class="post-author-avatar" src="<%= study[:image_link] %>">
     <h3 class="post-title"><a href="<%= study[:url] %>"><%= study[:title] %></a></h3>
     <p class="post-excerpt"><%= study[:description] %></p>

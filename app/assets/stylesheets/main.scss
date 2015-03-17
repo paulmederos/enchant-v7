@@ -486,4 +486,16 @@ article.post {
 #mce-success-response { background-color: rgb(221, 249, 216); }
 #mce-error-response   { background-color: rgb(249, 216, 216); }
 
+.about {
+  h1 {
+    font-size: 4.8rem;
+    font-weight: 300;
+    margin-bottom:.25em;
+  }
+}
 
+.card-case-study {
+  .post-excerpt {
+    // font-size:4rem;
+  }
+}
