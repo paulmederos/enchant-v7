@@ -497,14 +497,22 @@ article.post {
 .card-case-study {
   position: relative;
   max-width: 600px;
-  padding:1.5em 1em 1em;
+  width:47%;
+  float: left;
   box-sizing:border-box;
   border:1px solid #E0E0E0;
   border-radius: 6px;
-  margin-bottom:1em;
+  margin:0;
   transition: all $material-curve 0.3s;
   cursor: pointer;
-  padding-left:5em;
+  overflow:hidden;
+
+  @include mq-personal {
+    float:none;
+    margin:2em auto;
+    width:92%;
+  }
+
 
   &:hover {
     transition: all $material-curve 0.3s;
@@ -516,13 +524,20 @@ article.post {
     margin-bottom: 0;
   }
 
-  .case-study-icon {
-    position: absolute;
-    top:1em;
-    left:1em;
-    height:48px;
-    width:48px;
-    border-radius:50%;
+  .case-study-hero {
+    position: relative;
+    height:240px;
+    width: 100%;
+    margin:0 0 1em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    @include mq-personal { max-height:180px; }
+  }
+
+  .card-content {
+    padding:1em;
   }
 }
 
