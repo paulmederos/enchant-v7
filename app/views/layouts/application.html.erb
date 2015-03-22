@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Enchant Design: makers of thoughtful digital products</title>
+  <title><%= if content_for(:title).present? then content_for(:title) else "Enchant Design: makers of thoughtful digital products" end %></title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="https://paulmederos.s3.amazonaws.com/enchant/favicon.png">
