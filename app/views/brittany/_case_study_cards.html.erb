@@ -4,22 +4,26 @@
       title: "Elementum: Transport App",
       description: "Real time logistics visibility that helps Logistic managers be more proactive and spend less time tracking down spreadsheets.",
       url: transport_path,
-      class_tag: "card-transport"
+      class_tag: "card-transport",
+      tags: "interaction design - users testing - prototyping - research - web - mobile - enterprise"
     },{
       title: "Elementum: Situation Room",
       description: "Designing a control room to inspire collaboration between operational teams.",
       url: situation_room_path,
-      class_tag: "card-situation"
+      class_tag: "card-situation",
+      tags: ""
     },{
       title: "CFPB: Paying For College",
       description: "Helping Students make smarter financial decisions about college.",
       url: pfc_path,
-      class_tag: "card-college"
+      class_tag: "card-college",
+      tags: ""
     },{
       title: "CFPB: Yearly Strategic Plan",
       description: "A new type of government report—a living document, an online interactive report—for the CFPB to send to Congress",
       url: strategic_plan_path,
-      class_tag: "card-plan"
+      class_tag: "card-plan",
+      tags: ""
     }
   ]
 %>
@@ -32,6 +36,7 @@
       <div class="card-content">
         <h3><a href="<%= study[:url] %>"><%= study[:title] %></a></h3>
         <p><%= study[:description] %></p>
+        <p class="card-tags"><%= study[:tags] %></p>
       </div>
     </div>
   <%= raw("</div>") if [1,3].include?(index) %>
