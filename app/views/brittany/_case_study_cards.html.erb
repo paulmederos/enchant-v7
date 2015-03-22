@@ -30,7 +30,7 @@
 
 <div class="cards">
   <% @studies.each_with_index do |study, index| %>
-  <%= raw("<div class='group'>") if [0,2].include?(index) %>
+    <%= raw("<div class='group'>") if [0,2].include?(index) %>
     <div class="card-case-study animated fadeInUp js-card">
       <div class="case-study-hero <%= study[:class_tag] %>"></div>
       <div class="card-content">
@@ -39,6 +39,6 @@
         <p class="card-tags"><%= study[:tags] %></p>
       </div>
     </div>
-  <%= raw("</div>") if [1,3].include?(index) %>
+    <%= raw("</div>") if [1,3].include?(index) %>
   <% end %>
 </div><!-- /.js-packery -->

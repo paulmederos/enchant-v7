@@ -1,4 +1,5 @@
 <!-- RSS reader to pull cards goes here. -->
+<% visible_posts ||= 4 %>
 
 <% 
   @posts = []
@@ -19,7 +20,7 @@
 
 %>
 
-<div class="visible-posts">
+<div class="visible-posts" data-amount-visible="<%= visible_posts %>">
   <% @posts.each do |post| %>
     <div class="card-post animated fadeInUp js-card">
       <img class="post-author-avatar" src="<%= image_for_author post.dc_creator %>">

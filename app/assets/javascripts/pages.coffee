@@ -2,18 +2,20 @@ $ ->
   # Only show certain # of posts on home; 
   # Hide the rest until needed.
   if $('.card-post').length > 0
-    postsToShow = 4
     $posts =  $('.card-post')
     $hiddenPostsContainer = $('.hidden-posts')
+    $visiblePostsContainer = $('.visible-posts')
+    postsToShow = $visiblePostsContainer.data('amount-visible')
+    postsToShow ||= 4
 
     $posts.each (index, element) ->
       if index >= postsToShow
         $(element).appendTo($hiddenPostsContainer)
 
   $(document).on 'click', '.show-more-posts', (e) ->
-    postsToReveal = 3
     $hiddenPostsContainer = $('.hidden-posts')
     $visiblePostsContainer = $('.visible-posts')
+    postsToReveal = 3
 
     $hiddenPostsContainer.find('.card-post').each (index, element) ->
       if index < postsToReveal
