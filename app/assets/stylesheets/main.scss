@@ -497,12 +497,12 @@ article.post {
 .card-case-study {
   position: relative;
   max-width: 600px;
-  width:47%;
+  width:48%;
   float: left;
   box-sizing:border-box;
   border:1px solid #E0E0E0;
   border-radius: 6px;
-  margin:0;
+  margin:1em 1%;
   transition: all $material-curve 0.3s;
   cursor: pointer;
   overflow:hidden;
@@ -539,5 +539,29 @@ article.post {
   .card-content {
     padding:1em;
   }
+}
+
+.case-study-hero.card-transport { 
+  background-position-y: top;
+  background-image: url('https://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-card-transport.png');
+  @include retina { background-image: url('https://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-card-transport@2x.png'); }
+}
+
+.case-study-hero.card-situation { 
+  background-position-y: top;
+  background-image: url('https://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-card-situation.png');
+  @include retina { background-image: url('https://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-card-situation@2x.png'); }
+}
+
+.case-study-hero.card-college { 
+  background-position-y: top;
+  background-image: url('https://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-card-college.png');
+  @include retina { background-image: url('https://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-card-college@2x.png'); }
+}
+
+.case-study-hero.card-plan { 
+  background-position-y: top;
+  background-image: url('https://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-card-plan.png');
+  @include retina { background-image: url('https://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-card-plan@2x.png'); }
 }
 
