@@ -12,6 +12,7 @@ $ ->
       if index >= postsToShow
         $(element).appendTo($hiddenPostsContainer)
 
+  # Reveal posts when asked to
   $(document).on 'click', '.show-more-posts', (e) ->
     $hiddenPostsContainer = $('.hidden-posts')
     $visiblePostsContainer = $('.visible-posts')
@@ -23,6 +24,7 @@ $ ->
         $('.show-more-posts').hide() if $hiddenPostsContainer.find('.card-post').length == 0
     e.preventDefault()
 
+  # Smooth scrolling when needed (e.g. single page links)
   $(document).on 'click', "a.scrollable-anchor", (e) ->
     if location.pathname.replace(/^\//, "") is @pathname.replace(/^\//, "") and location.hostname is @hostname
       target = $(@hash)
@@ -33,12 +35,15 @@ $ ->
         , 800, "materialEase"
         false
 
+  # Link via entire Card
   $(document).on 'click', '.js-card', (e) ->
     link = $(@).find("a").first().attr('href')
     window.location = link
 
 
 
+
+# Material easing definition
 $.easing.jswing = $.easing.swing
 $.extend $.easing,
   def: "easeOutQuad"

@@ -4,7 +4,7 @@ gem 'pg'
 gem 'rack-rewrite'
 
 gem 'jquery-rails'
-gem 'turbolinks'
+# gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sprockets-coffee-react'
 
