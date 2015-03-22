@@ -51,17 +51,17 @@
 
     <h3>Constraints</h3>
 
-    <p>At the hack-a-thon, which was constrained to 6 hours, we didn’t think about the actual implementation or technology requirements. We used inVision to put together a click through prototype of the remote control for the situation room and spoke to the idea of a Control Room set up with 9 screens in a 3x3 configuration.</p>
-    
-    <p>For technology we pitched things like using Apple TV or Google Chromecast. But in reality, when it came time to build our hack-a-thon idea, Who knew hacking and integrating into a TV display could be so difficult and foreign. We experimented with Raspberry Pi and possibly creating a custom TV app that we would install for each of the displays on the wall of TVs. </p>
+    <p>At the hackathon, which was constrained to 6 hours, we didn’t think about the actual implementation or technology requirements. We used inVision to put together a click through prototype of the remote control for the situation room and spoke to the idea of a Control Room set up with 9 screens in a 3x3 configuration. In reality, it took an insane amount of hacking to integrate with the TV screens array.</p>
+
+    <hr>
 
     <h3>Design Process</h3>
 
-    <p>There were two experiences that needed designs for the situation room, the viewers experience and the remote control experience.</p>
+    <p>There were two experiences that needed designs for the situation room: the viewers experience and the remote control experience.</p>
 
-    <p>As a viewer how long would we want each poster to remain static on the screen before it rotated to a new screen with fresh data, or if they wanted to go through multiple routes or product lines how would our designs accommodate this dynamic changing of screens.</p>
-    <p>We would have to have an indicator that acted as a counter to visually indicate the time left before the change, and the actual transition needed to be smooth and not flickering because if there were 9 displays changing all at the same time it shouldn’t look like a malfunction or be irritatingly distracting. For each app we went came up with two posters that would reflect over all performance of issues that each app alerted the user of.</p>
-    <p>For Transport the two posters were Bottlenecks, which carousels through all the bottlenecks impacting that users routes. And the second one was Route performance which went though the over all health of that users routes and carrier performance. </p>
+    <p>As a viewer, we had questions like "how long would we want each poster to remain static on the screen before it rotated", or "if they wanted to go through multiple routes or product lines how would our designs accommodate this dynamic changing of screens?"</p>
+    <p>We designed an indicator that acted as a counter to visually indicate the time left before the change, and the actual transition needed to be smooth (no flickering) because 9 displays changing could be irritatingly distracting. For each app, we designed two posters that would reflect the overall status that each app was responsible for.</p>
+    <p>For Transport (my primary app), the two posters were "Bottlenecks" (which carousels through all the bottlenecks impacting that users routes) and "Route Performance" (which cycled though the overall health of the users' routes and carrier performance.)</p>
 
     <figure class="image-container">
       <img src="https://dl.dropboxusercontent.com/u/52434928/Case%20Study%20Photos/SituationRoom_TransportV12bottlenecks.png"/>
@@ -74,7 +74,7 @@
     </figure>
 
 
-    <p>For the Remote controller experience, giving them a thumbnail of the poster they were about to change and the actual position of the TV they were selecting the new poster for. And then the confirmation that the poster was actually changed after they sent the request.</p>
+    <p>For the Remote Control experience, we designed a view that incorporated a thumbnail of the poster they were interacting with, including the position of the TV to be used for that poster. We also found that we needed a solid confirmation that the user updated a poster.</p>
 
     <figure class="image-container">
       <img src="https://dl.dropboxusercontent.com/u/52434928/Case%20Study%20Photos/SR_remote_vizV9c%2Bcopy.jpg"/>
@@ -82,25 +82,28 @@
     </figure>
 
 
-    <p>We did a lot of in-house testing with the remote to see how people felt about the responsiveness and process of changing a TV screen. There a still many ideas we have for the remote and even collaboration from the TV display to the users web application. </p>
+    <p>We did a lot of in-house testing with the remote to see how people felt about the general responsiveness and process of changing a TV screen. In the end, we found something that feels solid, intuitive, and responsive.</p>
 
     <h3>The Result</h3>
 
-    <p>We now have two customers who have bought Situation Rooms and a lot of other companies who have expressed interest. </p>
+    <p>We now have two customers who have bought Situation Rooms and dozens of other companies that have expressed interest.</p>
 
-    <p>“Dyson re-engineers its supply chain with a control tower to ‘create logistics magic’”</p>
+    <figure class="image-container">
+      <iframe width="100%" height="360" src="https://www.youtube.com/embed/gLH8i7Uuhwg" frameborder="0" style="margin:2.1rem auto;" allowfullscreen></iframe>
+      <figcaption class="figure-caption">"Dyson re-engineers its supply chain with a control tower to ‘create logistics magic"</figcaption>
+    </figure>
 
-    <iframe width="100%" height="360" src="https://www.youtube.com/embed/gLH8i7Uuhwg" frameborder="0" allowfullscreen></iframe>
+    
 
     <img src="http://paulmederos.s3.amazonaws.com/enchant/case-studies/britt-sit_room-remote.jpg" style="margin:2em auto;">
 
     <h3>Retrospective</h3>
 
-    <p>It’s amazing where ideas can come from. A simple hack-a-thon can create a viable product for a company, that’s amazing! I was impressed with the team effort and hard work that went into making this hack-a-thon project a reality. </p>
+    <p><b>Ideas can come from anywhere.</b><br>It’s amazing where ideas can come from. A simple hackathon can create a viable product for a company; that’s amazing! I was impressed with the team effort and hard work that went into bringing this hackathon project to reality.</p>
 
-    <p>Right now there is a separate remote control app which is an iPad application, but in the future I can see if being a little annoying that the user can’t access their situation room remote from the application they are in. So maybe in the future we will explore integrating the Situation Room experience into each of our apps and it will just become another way for the user to display their supply chain data.</p>
+    <p><b>Start narrow, and work out towards more support.</b><br>Currently, there's a separate remote control iPad app, but we've found it annoying that the user can’t access their situation room remote from the primary app they're in. Perhaps in the future, we'll explore integrating the Situation Room experience into each of our primary apps, It'll just become another way for the user to explore their supply chain data.</p>
 
-    <p>There is also no easy way to make custom posters, yet. We’ve received multiple requests to design custom Situation Room screens, but because it’s still a 20% project there just isn’t the bandwidth. So talks are in the works of building a “create your own Situation Room poster” flow. But that’s gonna take some more explorations.</p>
+    <p><b>Balancing 20% time is tough.</b><br>There's no easy way to make custom posters, but we’ve received multiple requests to design custom Situation Room screens. But because it’s still a 20% project, we just don't have the bandwidth to take these on.</p>
   </section>
 </main>
 
