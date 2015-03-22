@@ -31,9 +31,9 @@ $ ->
         , 800, "materialEase"
         false
 
-  $(document).on 'click', '.card-post', (e) ->
+  $(document).on 'click', '.js-card', (e) ->
     link = $(@).find("a").first().attr('href')
-    window.location = link  
+    window.location = link
 
 
 

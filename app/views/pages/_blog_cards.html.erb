@@ -21,7 +21,7 @@
 
 <div class="visible-posts">
   <% @posts.each do |post| %>
-    <div class="card-post animated fadeInUp">
+    <div class="card-post animated fadeInUp js-card">
       <img class="post-author-avatar" src="<%= image_for_author post.dc_creator %>">
       <h3 class="post-title"><a href="<%= post.link %>"><%= post.title %></a></h3>
       <p class="post-excerpt"><%= truncate(strip_tags(post.description), length: 200, separator: ' ', escape: false) %></p>
