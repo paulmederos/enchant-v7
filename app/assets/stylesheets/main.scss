@@ -485,13 +485,52 @@ article.post {
   a { padding:.75em 1em; }
 }
 
-.about {
-  h1 {
-    font-size: 4.8rem;
-    font-weight: 300;
-    margin-bottom:.25em;
+.britt-header-photo {
+  display:block;
+  position:absolute;
+  top:0;
+  left:-9.6rem;
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-image: url('http://paulmederos.s3.amazonaws.com/enchant/britt@2x.jpg');
+
+  @include mq-personal {
+    position:relative;
+    left: initial;
+    top:0;
+    margin:1em auto;
   }
 }
+
+.about { 
+  margin-top:8rem; 
+  @include mq-personal { margin-top:4rem; }
+}
+
+.about h1 {
+  font-size: 4.8rem;
+  font-weight: 300;
+  margin-bottom:.25em;
+
+  @include mq-personal {
+    font-weight: 500;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
+
+.about .subheader {
+  @include mq-personal {
+    text-align: center;
+    font-size:2.1rem;
+    line-height: 1.2;
+  }
+}
+
 
 .card-case-study {
   position: relative;
