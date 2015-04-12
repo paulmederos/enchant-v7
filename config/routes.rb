@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     get '/strategic-plan',      to: 'brittany#strategic_plan', as: :strategic_plan
   end
 
+  resources :charges
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
